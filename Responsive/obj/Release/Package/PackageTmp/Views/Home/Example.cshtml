@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/Main.cshtml";
+    ViewBag.Title = "Ví dụ 1";
+}
+
+<div class="col-lg-3 col-xs-12">
+    <div class="box btn-success" style="margin-bottom: 20px;">
+        <h5><span class="circle">1</span> Chọn loại xe</h5>
+        <p align="center"><img src="~/Content/images/car1.png" /></p>
+        <p>Vui lòng chọn loại xe bạn quan tâm:</p>
+        <select style="width:100%; text-indent: 10px;">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <table width="100%" style="border: 1px solid gray; padding: 5px; background: #fff; color: gray; margin: 10px 0;">
+            <tr>
+                <td>Tổng giá:</td>
+                <td style="text-align: right; padding-right: 10px;">969.000.000đ</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box btn-warning">
+        Đại lý được lựa chọn sẽ gửi cho bạn bảng báo giá tốt nhất cho chiếc xe này.
+        Giá bán được nêu ở đây chưa bao gồm các phụ kiện, trang thiết bị cộng thêm, phí bảo hiểm và các loại phí khác được áp dụng khi mua xe.
+    </div>
+</div>
+<div class="col-lg-3 col-xs-12">
+    <div class="box btn-danger" style="margin-bottom: 20px;">
+        <h5><span class="circle">2</span> Chọn đại lý</h5>
+        <p>Tìm kiếm đại lý theo:</p>
+        <form action="">
+            <input type="radio" name="sex" value="male"> Thành phố/Tỉnh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="sex" value="female">Tên đại lý<br /><br />
+            <input type="text" name="userid" placeholder="Vui lòng nhập liệu...">&nbsp;&nbsp;<button>Tìm kiếm mới</button>
+        </form>
+    </div>
+    <div class="box btn-primary">
+        <h5><span class="circle">3</span> Thông tin liên hệ của bạn</h5>
+        <p>
+            * Đây là phần bắt buộc<br />
+            <table style="width: 100%; text-indent: 10px; border-collapse: separate; border-spacing: 10px;">
+                <tr>
+                    <td width="100px">Danh xưng*</td>
+                    <td>
+                        <select style="width:100%; text-indent: 10px;">
+                            <option value="mr">---</option>
+                            <option value="mr">Ông</option>
+                            <option value="mrs">Bà</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Họ*</td>
+                    <td>
+                        <input type="text" style="width:100%; text-indent: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tên*</td>
+                    <td>
+                        <input type="text" style="width:100%; text-indent: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:*</td>
+                    <td>
+                        <input type="text" style="width:100%; text-indent: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại:</td>
+                    <td>
+                        <input type="text" style="width:100%; text-indent: 10px;">
+                    </td>
+                </tr>
+            </table>
+        </p>
+    </div>
+</div>
+<div class="col-lg-3 col-xs-12">
+    <div class="box btn-info" style="margin-bottom: 20px;">
+        <h5><span class="circle">4</span> Quy định pháp lý</h5>
+        <table style="width: 100%; border-collapse: separate; border-spacing: 10px;">
+            <tr>
+                <td valign="top"><input type="checkbox" name="vehicle" value="Bike" /></td>
+                <td>
+                    Tôi đồng ý để Chevrolet lưu trữ thông tin cá nhân cho mục đích tiếp thị, nghiên cứu thị trường, theo dõi doanh số và để liên lạc với tôi,
+                    Chevrolet cũng có thể tiết lộ thông tin này trong nội bộ tập đoàn (Tập đoàn General Motors) và các đại lý và đại diện bán hàng
+                    với mục đích trên. Thông tin chúng tôi thu thập từ bạn sẽ được chuyển, lưu và xử lý bởi nhân viên của chúng tôi hoặc các đơn vị cung cấp dịch vụ bên ngoài Việt nam.
+                    Chúng tôi sẽ làm tất cả những gì cần thiết để đảm bảo thông tin của bạn được xử lý đúng quy định an toàn và luật pháp hiện hành.*
+                </td>
+            </tr>
+        </table>
+        <button onclick="alert('Đã gửi yêu cầu!')" style="color: white; font-weight: bold; background: linear-gradient(#ffd800,#fcb408); border: none; padding: 5px 8px; border-radius: 3px;">Gửi yêu cầu</button>
+    </div>
+</div>
+
+<audio controls autoplay hidden>
+    <source src="~/Content/audio/TakeMeOrLeaveMe.m4a" type="audio/mp4" />
+</audio>

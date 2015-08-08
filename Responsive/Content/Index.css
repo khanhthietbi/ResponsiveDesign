@@ -1,0 +1,116 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div1 {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: #fff;
+    background: linear-gradient(#ffc72d, #ff6a00);
+    padding: 5px;
+    margin-top: 0;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu li {
+    text-indent: 10px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #ff672d;
+    margin: 5px;
+}
+
+.menu li ul {
+    display: none;
+}
+
+.menu li ul li {
+    font-size: 13px;
+    background-color: #ffc72d;
+    padding: 0 8px;
+    margin: 0px;
+}
+
+
+.menu li ul li:hover {
+    background-color: #fbe7a7;
+}
+
+.widget {
+    background-color: #fbe7a7;
+    margin: 10px 0;
+    border: 2px dashed #bf7418;
+}
+
+.group {
+    display: block;
+    clear: both;
+}
+
+.footer {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    color: #fff;
+    background-color: #ff6a00;
+    text-align: center;
+    line-height: 100px;
+}
+
+.circle {
+            width: 23px;
+            height: 23px;
+            display: inline-block;
+            font-size: 13px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 50%;
+            border: 5px solid #ffd800;
+            background-color: #ffd800;
+        }
+
+.box {
+    padding: 15px;
+}

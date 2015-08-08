@@ -1,0 +1,60 @@
+﻿<div id="header" align="center">
+    <img src="~/Content/images/logo.png" /><br />
+    The Rider in the Sky
+</div>
+<div class="row">
+    <div class="menu col-lg-2 col-xs-12">
+        <ul class="topNav">
+            <li>
+                Reference
+                <ul>
+                    <li><a href="@Url.Action("Index","Home")">Home Page</a></li>
+                    <li><a href="@Url.Action("Example","Home")">Another Example</a></li>
+                </ul>
+            </li>
+            <li>
+                Author's Information
+                <ul>
+                    <li><a href="@Url.Action("About","Home")">About</a></li>
+                    <li><a href="@Url.Action("Contact","Home")">Contact</a></li>
+                </ul>
+            </li>
+            <li>
+                Menu item 3
+                <ul>
+                    <li><a href="#">Sub item 3.1</a></li>
+                    <li><a href="#">Sub item 3.2</a></li>
+                </ul>
+            </li>
+            <li>
+                Menu item 4
+                <ul>
+                    <li><a href="#">Sub item 4.1</a></li>
+                </ul>
+            </li>
+            <li>
+                Menu item 5
+                <ul>
+                    <li><a href="#">Sub item 5.1</a></li>
+                    <li><a href="#">Sub item 5.2</a></li>
+                    <li><a href="#">Sub item 5.3</a></li>
+                </ul>
+            </li>
+            <li>
+                Menu item 6
+                <ul>
+                    <li><a href="#">Sub item 6.1</a></li>
+                    <li><a href="#">Sub item 6.2</a></li>
+                    <li><a href="#">Sub item 6.3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $('.topNav > li').click(
+            function () {
+                $('.topNav > li').children().stop().slideUp(500);
+                $(this).children().stop().slideToggle(500);
+            });
+    </script>
